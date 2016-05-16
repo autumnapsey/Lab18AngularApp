@@ -4,7 +4,7 @@ app.controller('fizzcontrol', function($scope, fizzService){
 	$scope.fizzBuzz = function(number){
 		console.log('function is firing.');
 
-		fizzService.evaluateNumber(number);
+		$scope.fizzOrBuzz = fizzService.evaluateNumber(number);
 
 	};
 });

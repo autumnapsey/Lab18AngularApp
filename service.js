@@ -1,7 +1,7 @@
 var app = angular.module('app');
 
 app.factory('fizzService', function(){
-	var isItFizzBuzz;
+	var isItFizzBuzz = {};
 	
 	var isDivisibleby = function(i,y){
 	  return i % y === 0;
