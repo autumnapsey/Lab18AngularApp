@@ -19,28 +19,24 @@ app.factory('fizzService', function(){
 		evaluateNumber: function(number){
 			var num = parseFloat(number, 10);
 			if(find(num, 3) && find(num, 5)){
-				console.log("FizzBuzz");
 				isItFizzBuzz = "FizzBuzz";
 				return isItFizzBuzz;
 			
 			}
 			if(find(num, 3)){
-				console.log("Fizz");
 				isItFizzBuzz = "Fizz";
 				return isItFizzBuzz;
 
 			}
 			if(find(num, 5)){
-				console.log("Buzz");
 				isItFizzBuzz = "Buzz";
 				return isItFizzBuzz;
 
 			}
 			else{
-				console.log(num);
+				
 				return num;
 			}
-
 		},
 	};
 });
